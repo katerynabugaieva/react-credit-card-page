@@ -16,14 +16,6 @@
   font-weight: 700;
 }
 
-.avatar {
-  width: 40px;
-  height: 40px;
-  background-size: cover;
-  background-position: top center;
-  border-radius: 50%;
-}
-
 .progress-bar {
   height: 10px;
   position: relative;
@@ -63,15 +55,7 @@
  .user-info {
   display: inline-block;
  }
- .name {
-  display: inline-block;
-  font-size: 18px;
- }
   
- .credit-card-number {
-  display: block;
-  font-size: 12px;
- }
  .edit {
   grid-column-start: 2;
   position: absolute;
@@ -95,6 +79,7 @@
   font-size: 14px;
   display: inline-block;
  }
+
  .left-column {
   grid-column: 1/2;
   grid-column-start: 1;

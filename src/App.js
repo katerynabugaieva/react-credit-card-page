@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import User from './components/User/User';
 
 function App() {
   return (
@@ -12,13 +13,7 @@ function App() {
         </div>
 
         <div className='container'>
-          <div className='user-card'>
-            <img className='avatar' alt='avatar' src='../assets/avatar.svg' />
-            <div className='user-info'>
-              <label className='name'>Philipp Rieger</label>
-              <label className='credit-card-number'>****12345</label>
-            </div>
-          </div>
+          <User />
 
           <div className='edit'>
             <button className='edit-button'>
@@ -57,11 +52,7 @@ function App() {
             <div className='card-expenses'>
               <div className='expens-item'>
                 <div>
-                  <img
-                    className='avatar'
-                    src='../assets/avatar.svg'
-                    alt='avatar'
-                  />
+                  <User />
                   <label>sum</label>
                   <label>date</label>
                   <label>Exported/invoice missing</label>
