@@ -28,7 +28,11 @@ function App() {
           </div>
 
           <div className='left-column'>
-            <img src='' alt='card will be there' />
+          <img
+            alt='card'
+            src='../assets/card.png'
+            className='credit-card-img'
+          />
             <ProgressBar limit='1200' usedLimit='800' spentMoney='5759' />
           </div>
 
