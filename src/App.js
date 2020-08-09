@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import User from './components/User/User';
 import ProgressBar from './components/ProgressBar/ProgressBar';
+import CreditCardDetails from './components/CreditCardDetails/CreditCardDetails';
 
 function App() {
   return (
@@ -34,8 +35,8 @@ function App() {
           <div className='right-column'>
             <h3>Credit card details</h3>
 
-            <div className='card-month-limit'>
-              <label>infos</label>
+            <div className='card-item'>
+              <CreditCardDetails />
             </div>
 
             <h3>expenses</h3>
