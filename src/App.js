@@ -13,7 +13,11 @@ function App() {
         </div>
 
         <div className='container'>
-          <User />
+          <User
+            name='Philipp Rieger'
+            imagePath='../assets/avatar.svg'
+            cardNumber='****1234'
+          ></User>
 
           <div className='edit'>
             <button className='edit-button'>
@@ -52,7 +56,11 @@ function App() {
             <div className='card-expenses'>
               <div className='expens-item'>
                 <div>
-                  <User />
+                  <User
+                    name='Philipp Rieger'
+                    imagePath='../assets/avatar.svg'
+                    position='developer'
+                  ></User>
                   <label>sum</label>
                   <label>date</label>
                   <label>Exported/invoice missing</label>
