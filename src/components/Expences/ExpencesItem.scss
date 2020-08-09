@@ -1,0 +1,32 @@
+table {
+  border-bottom: 2px solid rgb(240, 240, 240);
+}
+th {
+  text-align: left;
+  font-size: 12px;
+}
+
+td {
+  font-size: 12px;
+  text-align: right;
+}
+
+.sum {
+  font-weight: 700;
+}
+
+.status-negativ {
+  background-color: rgb(255, 236, 236);
+  color: rgb(225, 124, 147);
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+}
+
+.status-positiv {
+  background-color: rgb(227, 251, 243);
+  color: rgb(49, 169, 143);
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+}
+
+.dollars:after { content:'$'; }

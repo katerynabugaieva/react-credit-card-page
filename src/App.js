@@ -3,6 +3,7 @@ import './App.scss';
 import User from './components/User/User';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import CreditCardDetails from './components/CreditCardDetails/CreditCardDetails';
+import Expences from './components/Expences/Expences';
 
 function App() {
   return (
@@ -28,11 +29,11 @@ function App() {
           </div>
 
           <div className='left-column'>
-          <img
-            alt='card'
-            src='../assets/card.png'
-            className='credit-card-img'
-          />
+            <img
+              alt='card'
+              src='../assets/card.png'
+              className='credit-card-img'
+            />
             <ProgressBar limit='1200' usedLimit='800' spentMoney='5759' />
           </div>
 
@@ -43,19 +44,12 @@ function App() {
               <CreditCardDetails />
             </div>
 
-            <h3>expenses</h3>
+            <h3>Expenses</h3>
 
             <div className='card-expenses'>
-              <div className='expens-item'>
-                <div>
-                  <User
-                    name='Philipp Rieger'
-                    imagePath='../assets/avatar.svg'
-                    position='developer'
-                  ></User>
-                  <label>sum</label>
-                  <label>date</label>
-                  <label>Exported/invoice missing</label>
+              <div className='card-item'>
+                <div className='expens-item'>
+                  <Expences />
                 </div>
               </div>
             </div>
