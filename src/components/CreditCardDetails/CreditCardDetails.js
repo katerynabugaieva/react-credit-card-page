@@ -1,5 +1,4 @@
 import React from 'react';
-import './CreditCardDetails.scss';
 
 class CreditCardDetails extends React.Component {
   constructor(props) {

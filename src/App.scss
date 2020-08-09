@@ -1,26 +1,24 @@
-* {
-  box-shadow: 0 0 0 2px #bedead inset;
-}
-
-.App {
-  background-color: rgb(251, 251, 251);
-}
-
 .container {
   display: grid;
-  grid-template-columns: repeate(5, 1fr);
+  grid-template-columns: 30% auto;
+  grid-template-rows: 10% auto auto;
 }
 
 .back-to {
-  font-size: small;
+  font-size: 12px;
   font-weight: 700;
+  color: rgb(131, 128, 128);
 }
 
-.user-info {
-  display: inline-block;
+.back-to-button {
+  border: none;
+  color: rgb(131, 128, 128);
+  background-color: rgb(251, 251, 251);
+  cursor: pointer;
 }
 
 .edit {
+  display: block;
   grid-column-start: 2;
   position: absolute;
   right: 0px;
@@ -30,11 +28,16 @@
   background-color: rgb(245, 245, 245);
   border: none;
   text-align: center;
-  display: inline-block;
-  color: black;
+  display: block;
+  color: rgb(131, 128, 128);
   border-radius: 20%;
   cursor: pointer;
   height: 25px;
+}
+
+.user-card {
+  padding: 0 18px;
+  margin-left: 10px;
 }
 
 .icon {
@@ -45,24 +48,65 @@
 }
 
 .left-column {
+  padding: 60px 18px;
   grid-column: 1/2;
   grid-column-start: 1;
   grid-row-start: 2;
 }
 
-.right-column {
-  grid-column: 2/5;
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-
-.card-month-limit {
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(240, 240, 240);
-  box-shadow: 2px 2px rgb(236, 236, 236);
-}
-
 .credit-card-img {
   margin-left: 10px;
   width: 100%;
+}
+
+.spent-progress-bars {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.right-column {
+  grid-column: 3/12;
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.card-item {
+  background-color: rgb(255, 255, 255);
+  border-left: 2px solid rgb(240, 240, 240);
+  border-right: 2px solid rgb(240, 240, 240);
+  box-shadow: 2px 2px rgb(236, 236, 236);
+}
+
+.credit-info-card {
+  grid-column: 3/12;
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.expenses-card {
+  grid-column: 3/12;
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+
+h4 {
+  margin-left: 15px;
+}
+
+table {
+  border-bottom: 2px solid rgb(240, 240, 240);
+  border-top: 1px solid rgb(240, 240, 240);
+  border-spacing: 10px;
+  width: 100%;
+}
+th {
+  text-align: left;
+  font-size: 12px;
+}
+
+td {
+  font-size: 12px;
+  text-align: right;
+  color: rgb(131, 128, 128);
 }
