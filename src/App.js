@@ -57,7 +57,11 @@ function App() {
             <div className='card-expenses'>
               <div className='expens-item'>
                 <div>
-                  <img className='avatar' src='../assets/avatar.svg' />
+                  <img
+                    className='avatar'
+                    src='../assets/avatar.svg'
+                    alt='avatar'
+                  />
                   <label>sum</label>
                   <label>date</label>
                   <label>Exported/invoice missing</label>

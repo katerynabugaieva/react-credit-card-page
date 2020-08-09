@@ -1,11 +1,116 @@
 * {
   box-shadow: 0 0 0 2px #bedead inset;
+}
+
+.App {
+  background-color: rgb(251, 251, 251);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeate(5, 1fr);
+}
+
+.back-to {
+  font-size: small;
+  font-weight: 700;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+}
+
+.progress-bar {
+  height: 10px;
+  position: relative;
+  background: rgb(235, 233, 233);
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
  }
  
- .App {
-  background-color: rgb(251, 251, 251);
+ .progress-bar > span {
+  width: 75%;
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: rgb(13, 93, 199);
+  position: relative;
+  overflow: hidden;
+ }
+ 
+ .terms {
+  font-size: 10px;
+  display: inline-block;
+  width: 30%;
+ }
+  
+ .limit {
+  font-size: 12px;
+  display: inline-block;
+  text-align: right;
+  width: 69%;
+ }
+ 
+ .user-info {
+  display: inline-block;
+ }
+ .name {
+  display: inline-block;
+  font-size: 18px;
+ }
+  
+ .credit-card-number {
+  display: block;
+  font-size: 12px;
+ }
+ .edit {
+  grid-column-start: 2;
+  position: absolute;
+  right: 0px;
+ }
+ 
+ .edit-button {
+  background-color: rgb(245, 245, 245);
+  border: none;
+  text-align: center;
+  display: inline-block;
+  color: black;
+  border-radius: 20%;
+  cursor: pointer;
+  height: 25px;
+ }
+  
+ .icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-size: 14px;
+  display: inline-block;
+ }
+ .left-column {
+  grid-column: 1/2;
+  grid-column-start: 1;
+  grid-row-start: 2;
  }
 
- .avatar {
-   height: 50px;
+ .right-column {
+  grid-column: 2/5;
+  grid-column-start: 2;
+  grid-row-start: 2;
  }
+  
+ .card-month-limit {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(240, 240, 240);
+  box-shadow: 2px 2px rgb(236, 236, 236);
+ }
+  
+  
