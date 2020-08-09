@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import User from './components/User/User';
+import ProgressBar from './components/ProgressBar/ProgressBar';
 
 function App() {
   return (
@@ -27,21 +28,7 @@ function App() {
 
           <div className='left-column'>
             <img src='' alt='card will be there' />
-            <div className='money-month-slider'>
-              <label className='terms'>This months</label>
-              <label className='limit'>800.00$/1,200.00$</label>
-
-              <div className='progress-bar'>
-                <span></span>
-              </div>
-            </div>
-            <div className='money-year-slider'>
-              <label className='terms'>Spent this year</label>
-              <label className='limit'>5,759.00$</label>
-              <div className='progress-bar'>
-                <span></span>
-              </div>
-            </div>
+            <ProgressBar limit='1200' usedLimit='800' spentMoney='5759' />
           </div>
 
           <div className='right-column'>

@@ -5,3 +5,8 @@ export interface IUserProps {
     cardNumber?: string;
   }
   
+  export interface IProgressBarProps {
+    limit: number;
+    usedLimit: number;
+    spentMoney: number;
+  }
